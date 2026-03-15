@@ -62,5 +62,15 @@ public class ControlFlow {
             System.out.println("N: "+ n);
             n--;
         }while (n>0);
+
+        //enhanced for loop
+        String[] fruits = {"Apple","Banana","Guava","Mango"};
+        for (String fruit:fruits){
+            System.out.println("Fruits: "+ fruit);
+        }
+
+        for (int i=0;i< fruits.length;i++){
+            System.out.println(fruits[i]);
+        }
     }
 }

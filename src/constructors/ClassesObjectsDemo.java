@@ -1,4 +1,4 @@
-package three.classesDemo;
+package constructors;
 
 public class ClassesObjectsDemo {
    public static void main(String[] args) {

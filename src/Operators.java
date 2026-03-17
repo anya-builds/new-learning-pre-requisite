@@ -4,6 +4,7 @@ public class Operators {
 //        System.out.println((10+20)*2);
         arithmeticOperator();
         unaryDemo();
+        logicalDemo();
     }
 
     private static void arithmeticOperator() {
@@ -22,5 +23,27 @@ private static void unaryDemo(){
     System.out.println("x++= " + (x++) );
     System.out.println("x after post increment= " + x );
     System.out.println("-x= " + (-x) );
+}
+
+
+private static void logicalDemo(){
+    System.out.println("\n ----logical operators ---");
+    boolean isAdult  = true;
+    boolean hasTicket = false;
+    if(isAdult || hasTicket){
+        System.out.println("Welcome");
+
+    }else{
+        System.out.println("Bye");
+    }
+
+    if((4>10) || (5<10)){
+        System.out.println("Hello");
+    }
+
+    //ternary operator
+    System.out.println((isAdult || hasTicket) ? "Welcome" : "Bye");
+
+
 }
 }

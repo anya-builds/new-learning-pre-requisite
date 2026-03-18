@@ -8,7 +8,7 @@ public class ConstructorDemo {
 //        car1.color = "Red";
         car1.drive();
 
-        Car car2 = new Car("Tesla",89,"red");
+        Car car2 = new Car("Tesla",-89,"red");
 //        car2.brand= "Toyota";
 //        car2.color = "Black";
 //        car2.speed = 679;

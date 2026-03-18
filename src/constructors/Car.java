@@ -4,7 +4,7 @@ package constructors;
 public class Car {
     String brand;
     String color;
-    int speed;
+    private int speed;
 
     public Car(String brand, int speed, String color) {
         this.brand = brand;
@@ -24,6 +24,8 @@ public class Car {
     }
 
     public int getSpeed() {
+        if(speed<0)
+            return 0;
         return speed;
     }
     public void setSpeed(int speed){

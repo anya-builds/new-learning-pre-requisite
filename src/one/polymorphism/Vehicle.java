@@ -1,4 +1,4 @@
-package one.inheritance;
+package one.polymorphism;
 
 public class Vehicle {
     private String brand;
@@ -7,6 +7,10 @@ public class Vehicle {
     public Vehicle(String brand, int speed) {
         this.brand = brand;
         this.speed = speed;
+    }
+
+    public void start(){
+        System.out.println("Starting Vehicle...");
     }
 
     public String getBrand() {

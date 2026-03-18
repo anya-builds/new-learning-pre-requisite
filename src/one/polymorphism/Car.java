@@ -1,8 +1,12 @@
-package one.inheritance;
+package one.polymorphism;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
     private int doors;
 
+
+    public void start(){
+        System.out.println("Starting Car...");
+    }
     public Car(String brand, int speed, int doors){
         super(brand,speed);
         this.doors=doors;

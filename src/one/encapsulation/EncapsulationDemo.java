@@ -1,18 +1,37 @@
 package one.encapsulation;
 
 class Car {
-    String brand;
-    String color;
-    int speed;
+    private String brand;
+    private String color;
+    private int speed;
 
     public Car(String brand,String color, int speed){
         this.brand = brand;
         this.color = color;
-        this.speed=speed;
+//        this.speed=speed;
+        setSpeed(speed);
     }
+
     public void drive(){
         System.out.println(brand + " is driving at " + speed);
     }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        if(speed<0)
+            speed=0;
+        this.speed = speed;
+    }
 }
 public class EncapsulationDemo {
+    public static void main() {
+        Car car1 = new Car("Toyota","Red",800);
+        car1.setSpeed(-200);
+        car1.drive();
+        Car car2 = new Car("Kia","White",-900);
+        car2.drive();
+    }
 }

@@ -7,4 +7,10 @@ public class Car extends Vehicle{
         super(brand,speed);
         this.doors=doors;
     }
+
+    @Override
+    public void displayInfo() {
+//        super.displayInfo();
+        System.out.println("Brand: " + getBrand() + ", Speed: " + getSpeed() + " km/hr" + doors + " doors");
+    }
 }

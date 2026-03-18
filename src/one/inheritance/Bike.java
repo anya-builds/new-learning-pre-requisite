@@ -15,4 +15,10 @@ public class Bike extends Vehicle{
     public void setHasCarrier(boolean hasCarrier) {
         this.hasCarrier = hasCarrier;
     }
+
+    @Override
+    public void displayInfo(){
+        super.displayInfo();
+        System.out.println("Brand: " + getBrand() + " Speed: " + getSpeed() + " km/hr" + hasCarrier + " hasCarrier");
+    }
 }

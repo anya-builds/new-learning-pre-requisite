@@ -24,8 +24,8 @@ public class Car {
     }
 
     public int getSpeed() {
-        if(speed<0)
-            return 0;
+//        if(speed<0)
+//            return 0;
         return speed;
     }
     public void setSpeed(int speed){

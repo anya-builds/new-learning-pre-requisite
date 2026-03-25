@@ -12,8 +12,9 @@ public class Primitives {
 //        long largeInteger = 973269328780352703L;
 //        boolean check = true;
         Scanner sc = new Scanner(System.in);
-        int rl = sc.nextInt();
-        System.out.println("Your roll no is "+ rl);
+//        int rl = sc.nextInt();
+//        System.out.println("Your roll no is "+ rl);
+
 
     }
 }

@@ -7,10 +7,15 @@ public class Basics {
 //            System.out.println("Hello World!");
 //        }
 
-        int count =1;
-        while(count!=5){
-            System.out.println(count);
-            count++;
+//        int count =1;
+
+//        while(count!=5){
+//            System.out.println(count);
+//            count++;
+//        }
+
+        for(int i=0;i<5;i++){
+            System.out.println(i);
         }
     }
 }

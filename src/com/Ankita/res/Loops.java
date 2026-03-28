@@ -10,9 +10,23 @@ public class Loops {
 //          }
 
         Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        for(int num=1;num<=n;num++){
-            System.out.print(num+ " ");
-        }
+//        int n=sc.nextInt();
+//        for(int num=1;num<=n;num++){
+//            System.out.print(num+ " ");
+//            System.out.print("Hello");
+//        }
+
+        //while loop
+        int num=1;
+//        while (num<=5){
+//            System.out.print(num+" ");
+//            num++;
+//        }
+        int n=1;
+        do{
+            System.out.print(n+ " ");
+            n++;
+        }while (n<=5);
+
     }
 }

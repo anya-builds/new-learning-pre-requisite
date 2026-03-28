@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class sum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
-        int sum = num2+num1;
+        float num1 = sc.nextFloat();
+        float num2 = sc.nextFloat();
+        float sum = num2+num1;
         System.out.println("Sum: "+sum);
     }
 }

@@ -25,7 +25,18 @@ public class TypeCasting {
 //        byte b=50;
 //        b=b*2;
         int number = 'A';
-        System.out.println("你好");
+//        System.out.println("你好");
+//        System.out.println(3*8.7843f);
+        byte b=42;
+        char c='a';
+        short s=1024;
+        int i=5000;
+        float f=5.64f;
+        double d=0.1234;
+        double result = (f*b)+(i / c)-(d-s);
+        System.out.println((f*b) + "" + (i/c) + " " + (d-s));
+        System.out.println(result);
     }
+
 
 }

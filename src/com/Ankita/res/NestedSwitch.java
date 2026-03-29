@@ -26,6 +26,7 @@ public class NestedSwitch {
                     default:
                         System.out.println("No department");
                 }
+                break;
             default:
                 System.out.println("Enter correct id");
         }

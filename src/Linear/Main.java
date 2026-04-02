@@ -3,8 +3,8 @@ package Linear;
 public class Main {
     public static void main(String[] args) {
         int[] nums={23,45,1,2,8,19,-3,16,-11,28};
-        int target=195;
-        int ans=linearSearch(nums,target);
+        int target=19;
+        int ans=linearSearch2(nums,target);
         System.out.println(ans);
     }
     // search in the array return the index if item found else -1
@@ -22,4 +22,16 @@ public class Main {
         }
         return -1;
     }
+    static int linearSearch2(int[] arr,int target){
+        if(arr.length==0){
+            return -1;
+        }
+        for (int element:arr) {
+            if (element == target) {
+                return element;
+            }
+        }
+        return -1;
+    }
+
 }

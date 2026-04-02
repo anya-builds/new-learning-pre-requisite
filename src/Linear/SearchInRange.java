@@ -2,8 +2,8 @@ package Linear;
 
 public class SearchInRange {
     public static void main(String[] args) {
-        int[] arr={1,2,4,5,6,78,8,9,89,54,6,8};
-        int ans=linearSearch(arr,5,0,5);
+        int[] arr={18,12,-7,3,14,28};
+        int ans=linearSearch(arr,3,1,4);
         System.out.println(ans);
     }
     static int linearSearch(int[] arr,int target,int start,int end){

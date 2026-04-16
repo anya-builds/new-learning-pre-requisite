@@ -2,8 +2,8 @@ package stringDS;
 
 public class Comparison {
     public static void main(String[] args) {
-        String a="Kunal";
-        String b="Kunal";
+        String a="Ankita";
+        String b="Ankita";
 
         // ===
 //        System.out.println(a == b);

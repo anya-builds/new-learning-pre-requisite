@@ -3,18 +3,18 @@ package Pattern;
 public class Main {
     public static void main(String[] args) {
 //            int n=4;
-            pattern1(4);
+            pattern3(4);
 //        System.out.println(pattern1(n));
     }
     static void pattern2(int n){
-        for (int row = 1; row <= n; row++) {
+        for (int row = 1; row <= n; row--) {
             //for every row run the col
             for (int Col = 1; Col <= row; Col++) {
                 System.out.print("* ");
 
             }
             System.out.println();
-            
+
         }
 
     }
@@ -25,6 +25,16 @@ public class Main {
 
             }
             System.out.println();
+        }
+    }
+    static void pattern3(int n){
+        for (int row = 1; row<=n ; row++) {
+            for (int col =1; col <=n-row+1; col++) {
+                System.out.print("* ");
+
+            }
+            System.out.println();
+
         }
     }
 }

@@ -8,6 +8,8 @@ public class SB {
             builder.append(ch);
         }
         System.out.println(builder.toString());
+        builder.deleteCharAt(0);
+        System.out.println(builder);
 
     }
 }

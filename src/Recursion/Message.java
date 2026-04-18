@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Main {
+public class Message {
     public static void main(String[] args) {
         message();
     }

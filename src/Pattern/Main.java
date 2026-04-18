@@ -3,7 +3,7 @@ package Pattern;
 public class Main {
     public static void main(String[] args) {
 //            int n=4;
-            pattern3(4);
+            pattern4(4);
 //        System.out.println(pattern1(n));
     }
     static void pattern2(int n){
@@ -31,6 +31,16 @@ public class Main {
         for (int row = 1; row<=n ; row++) {
             for (int col =1; col <=n-row+1; col++) {
                 System.out.print("* ");
+
+            }
+            System.out.println();
+
+        }
+    }
+    static void pattern4(int n){
+        for (int row = 1 ; row <=n; row++) {
+            for (int col = 1; col <=row ; col++) {
+                System.out.print(col+" ");
 
             }
             System.out.println();

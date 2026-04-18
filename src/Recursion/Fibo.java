@@ -2,7 +2,7 @@ package Recursion;
 
 public class Fibo {
     public static void main(String[] args) {
-        System.out.println(fibo(6));
+        System.out.println(fibo(50));
     }
     static int fibo(int n){
         // base condition

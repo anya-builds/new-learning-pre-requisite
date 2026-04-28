@@ -1,6 +1,7 @@
 package tcsQues;
 
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.*;
 
 public class Solution4 {
     public static void main(String[] args) {
@@ -17,9 +18,32 @@ public class Solution4 {
 
         }
         int limit=sc.nextInt();
+        Inventory[] arr2=replenish(arr,limit);
+        for (int i = 0; i < arr2.length; i++) {
+            if(arr2[i].getThreshold()>75){
+                System.out.println(arr[i].getInventoryId()+" Critical Filling");
+            } else if (arr2[i].getThreshold()>=50 && arr2[i].getThreshold()<=75) {
+                System.out.println(arr2[i].getInventoryId()+" Moderate Filling");
+                
+            }else{
+                System.out.println(arr2[i].getInventoryId()+" Non Critical Filling");
+            }
+
+        }
     }
-    public static
+    public static Inventory[] replenish(Inventory[] arr,int limit){
+        Inventory[] arr2=new Inventory[0];
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i].getThreshold()<=limit){
+                arr2= Arrays.copyOf(arr2,arr2.length+1);
+                arr2[arr2.length-1]=arr[i];
+            }
+        }
+        return arr2;
+    }
+
 }
+
 class Inventory{
     int inventoryId;
     int maximumQuantity;
